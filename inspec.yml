@@ -1,0 +1,8 @@
+name: inspec-cis-windows10
+title: InSpec Profile for Windows 10 CIS Benchmark
+maintainer: Jesse Boyce
+copyright: Jesse Boyce
+copyright_email: jesse@jpboyce.org
+license: MIT License
+summary: An InSpec Compliance Profile for Windows 10
+version: 0.1.0
