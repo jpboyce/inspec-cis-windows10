@@ -6,3 +6,5 @@ copyright_email: jesse@jpboyce.org
 license: MIT
 summary: An InSpec Compliance Profile for Windows 10
 version: 0.1.0
+supports:
+  - os-family: windows
