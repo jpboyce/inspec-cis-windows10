@@ -24,8 +24,10 @@ control 'system-services-5-2' do
     describe service('bthserv') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bthserv') do
         its('Start') { should eq 4 }
+    end
 end
 
 control 'system-services-5-3' do
@@ -39,8 +41,10 @@ control 'system-services-5-3' do
     describe service('Browser') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Browser') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-4' do
@@ -54,8 +58,10 @@ control 'system-services-5-4' do
     describe service('MapsBroker') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MapsBroker') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-5' do
@@ -69,8 +75,10 @@ control 'system-services-5-5' do
     describe service('lfsvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-6' do
@@ -84,8 +92,10 @@ control 'system-services-5-6' do
     describe service('HomeGroupListener') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HomeGroupListener') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-7' do
@@ -99,8 +109,10 @@ control 'system-services-5-7' do
     describe service('HomeGroupProvider') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HomeGroupProvider') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-8' do
@@ -114,8 +126,10 @@ control 'system-services-5-8' do
     describe service('IISADMIN') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IISADMIN') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-9' do
@@ -129,8 +143,10 @@ control 'system-services-5-9' do
     describe service('irmon') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\irmon') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-10' do
@@ -144,8 +160,10 @@ control 'system-services-5-10' do
     describe service('SharedAccess') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-11' do
@@ -159,8 +177,10 @@ control 'system-services-5-11' do
     describe service('lltdsvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lltdsvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-12' do
@@ -174,8 +194,10 @@ control 'system-services-5-12' do
     describe service('LxssManager') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LxssManager') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-13' do
@@ -189,8 +211,10 @@ control 'system-services-5-13' do
     describe service('FTPSVC') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FTPSVC') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-14' do
@@ -204,8 +228,10 @@ control 'system-services-5-14' do
     describe service('MSiSCSI') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSiSCSI') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-15' do
@@ -219,8 +245,10 @@ control 'system-services-5-15' do
     describe service('PNRPsvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PNRPsvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-16' do
@@ -234,8 +262,10 @@ control 'system-services-5-16' do
     describe service('p2psvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\p2psvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-17' do
@@ -249,8 +279,10 @@ control 'system-services-5-17' do
     describe service('p2pimsvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\p2pimsvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-18' do
@@ -264,8 +296,10 @@ control 'system-services-5-18' do
     describe service('PNRPAutoReg') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PNRPAutoReg') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-19' do
@@ -279,8 +313,10 @@ control 'system-services-5-19' do
     describe service('wercplsupport') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wercplsupport') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-20' do
@@ -294,8 +330,10 @@ control 'system-services-5-20' do
     describe service('RasAuto') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasAuto') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-21' do
@@ -309,8 +347,10 @@ control 'system-services-5-21' do
     describe service('SessionEnv') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SessionEnv') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-22' do
@@ -324,8 +364,10 @@ control 'system-services-5-22' do
     describe service('TermService') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-23' do
@@ -339,8 +381,10 @@ control 'system-services-5-23' do
     describe service('UmRdpService') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UmRdpService') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-24' do
@@ -354,8 +398,10 @@ control 'system-services-5-24' do
     describe service('RpcLocator') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RpcLocator') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-25' do
@@ -369,8 +415,10 @@ control 'system-services-5-25' do
     describe service('RemoteRegistry') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-26' do
@@ -384,8 +432,10 @@ control 'system-services-5-26' do
     describe service('RemoteAccess') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-27' do
@@ -399,8 +449,10 @@ control 'system-services-5-27' do
     describe service('LanmanServer') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-28' do
@@ -414,8 +466,10 @@ control 'system-services-5-28' do
     describe service('simptcp') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\simptcp') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-29' do
@@ -429,8 +483,10 @@ control 'system-services-5-29' do
     describe service('SNMP') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-30' do
@@ -444,8 +500,10 @@ control 'system-services-5-30' do
     describe service('SSDPSRV') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SSDPSRV') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-31' do
@@ -459,8 +517,10 @@ control 'system-services-5-31' do
     describe service('upnphost') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\upnphost') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-32' do
@@ -474,8 +534,10 @@ control 'system-services-5-32' do
     describe service('WMSvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMSvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-33' do
@@ -489,8 +551,10 @@ control 'system-services-5-33' do
     describe service('WerSvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-34' do
@@ -504,8 +568,10 @@ control 'system-services-5-34' do
     describe service('Wecsvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wecsvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-35' do
@@ -519,8 +585,10 @@ control 'system-services-5-35' do
     describe service('WMPNetworkSvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-36' do
@@ -534,8 +602,10 @@ control 'system-services-5-36' do
     describe service('icssvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\icssvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-37' do
@@ -549,8 +619,10 @@ control 'system-services-5-37' do
     describe service('WpnService') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WpnService') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-38' do
@@ -564,8 +636,10 @@ control 'system-services-5-38' do
     describe service('WinRM') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinRM') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-39' do
@@ -579,8 +653,10 @@ control 'system-services-5-39' do
     describe service('WinHttpAutoProxySvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-40' do
@@ -594,8 +670,10 @@ control 'system-services-5-40' do
     describe service('W3SVC') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-41' do
@@ -609,8 +687,10 @@ control 'system-services-5-41' do
     describe service('XboxGipSvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxGipSvc') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-42' do
@@ -624,8 +704,10 @@ control 'system-services-5-42' do
     describe service('xbgm') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xbgm') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-43' do
@@ -639,8 +721,10 @@ control 'system-services-5-43' do
     describe service('XblAuthManager') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblAuthManager') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-44' do
@@ -654,8 +738,10 @@ control 'system-services-5-44' do
     describe service('XblGameSave') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblGameSave') do
         its('Start') { should eq 4 }
+        end
 end
 
 control 'system-services-5-45' do
@@ -669,6 +755,8 @@ control 'system-services-5-45' do
     describe service('XboxNetApiSvc') do
         it { should_not be_running }
     end
+
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc') do
         its('Start') { should eq 4 }
+        end
 end
