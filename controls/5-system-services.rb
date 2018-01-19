@@ -1,4 +1,5 @@
 # 5. System Services
+# The Start value for Windows services is 4 if disabled
 
 control 'system-services-5-1' do
     impact 1.0
@@ -10,6 +11,7 @@ control 'system-services-5-1' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('BthHFSrv') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 end
 
@@ -23,6 +25,7 @@ control 'system-services-5-2' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('bthserv') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bthserv') do
@@ -40,6 +43,7 @@ control 'system-services-5-3' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('Browser') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Browser') do
@@ -57,6 +61,7 @@ control 'system-services-5-4' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('MapsBroker') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MapsBroker') do
@@ -74,6 +79,7 @@ control 'system-services-5-5' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('lfsvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc') do
@@ -91,6 +97,7 @@ control 'system-services-5-6' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('HomeGroupListener') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HomeGroupListener') do
@@ -108,6 +115,7 @@ control 'system-services-5-7' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('HomeGroupProvider') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HomeGroupProvider') do
@@ -125,6 +133,7 @@ control 'system-services-5-8' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('IISADMIN') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IISADMIN') do
@@ -142,6 +151,7 @@ control 'system-services-5-9' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('irmon') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\irmon') do
@@ -159,6 +169,7 @@ control 'system-services-5-10' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('SharedAccess') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess') do
@@ -176,6 +187,7 @@ control 'system-services-5-11' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('lltdsvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lltdsvc') do
@@ -193,6 +205,7 @@ control 'system-services-5-12' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('LxssManager') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LxssManager') do
@@ -210,6 +223,7 @@ control 'system-services-5-13' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('FTPSVC') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FTPSVC') do
@@ -227,6 +241,7 @@ control 'system-services-5-14' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('MSiSCSI') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSiSCSI') do
@@ -244,6 +259,7 @@ control 'system-services-5-15' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('PNRPsvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PNRPsvc') do
@@ -261,6 +277,7 @@ control 'system-services-5-16' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('p2psvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\p2psvc') do
@@ -278,6 +295,7 @@ control 'system-services-5-17' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('p2pimsvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\p2pimsvc') do
@@ -295,6 +313,7 @@ control 'system-services-5-18' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('PNRPAutoReg') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PNRPAutoReg') do
@@ -312,6 +331,7 @@ control 'system-services-5-19' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('wercplsupport') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wercplsupport') do
@@ -329,6 +349,7 @@ control 'system-services-5-20' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('RasAuto') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasAuto') do
@@ -346,6 +367,7 @@ control 'system-services-5-21' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('SessionEnv') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SessionEnv') do
@@ -363,6 +385,7 @@ control 'system-services-5-22' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('TermService') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService') do
@@ -380,6 +403,7 @@ control 'system-services-5-23' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('UmRdpService') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UmRdpService') do
@@ -397,6 +421,7 @@ control 'system-services-5-24' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('RpcLocator') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RpcLocator') do
@@ -414,6 +439,7 @@ control 'system-services-5-25' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('RemoteRegistry') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry') do
@@ -431,6 +457,7 @@ control 'system-services-5-26' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('RemoteAccess') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess') do
@@ -448,6 +475,7 @@ control 'system-services-5-27' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('LanmanServer') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer') do
@@ -465,6 +493,7 @@ control 'system-services-5-28' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('simptcp') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\simptcp') do
@@ -482,6 +511,7 @@ control 'system-services-5-29' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('SNMP') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMP') do
@@ -499,6 +529,7 @@ control 'system-services-5-30' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('SSDPSRV') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SSDPSRV') do
@@ -516,6 +547,7 @@ control 'system-services-5-31' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('upnphost') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\upnphost') do
@@ -533,6 +565,7 @@ control 'system-services-5-32' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('WMSvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMSvc') do
@@ -550,6 +583,7 @@ control 'system-services-5-33' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('WerSvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc') do
@@ -567,6 +601,7 @@ control 'system-services-5-34' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('Wecsvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wecsvc') do
@@ -584,6 +619,7 @@ control 'system-services-5-35' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('WMPNetworkSvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc') do
@@ -601,6 +637,7 @@ control 'system-services-5-36' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('icssvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\icssvc') do
@@ -618,6 +655,7 @@ control 'system-services-5-37' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('WpnService') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WpnService') do
@@ -635,6 +673,7 @@ control 'system-services-5-38' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('WinRM') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinRM') do
@@ -652,6 +691,7 @@ control 'system-services-5-39' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('WinHttpAutoProxySvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc') do
@@ -669,6 +709,7 @@ control 'system-services-5-40' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('W3SVC') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC') do
@@ -686,6 +727,7 @@ control 'system-services-5-41' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('XboxGipSvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxGipSvc') do
@@ -703,6 +745,7 @@ control 'system-services-5-42' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('xbgm') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xbgm') do
@@ -720,6 +763,7 @@ control 'system-services-5-43' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('XblAuthManager') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblAuthManager') do
@@ -737,6 +781,7 @@ control 'system-services-5-44' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('XblGameSave') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblGameSave') do
@@ -754,6 +799,7 @@ control 'system-services-5-45' do
     # http://inspec.io/docs/reference/resources/service/
     describe service('XboxNetApiSvc') do
         it { should_not be_running }
+        it { should_not be_enabled }
     end
 
     describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc') do
