@@ -32,7 +32,7 @@ control 'advanced-audit-policy-17-2-2' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Computer Account Management"') do
-        its('stdout') { should include 'Computer Account Management                   Success and Failure' }
+        its('stdout') { should include 'Computer Account Management             Success and Failure' }
     end
 end
 
@@ -44,7 +44,7 @@ control 'advanced-audit-policy-17-2-3' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Other Account Management Events"') do
-        its('stdout') { should include 'Other Account Management Events                   Success and Failure' }
+        its('stdout') { should include 'Other Account Management Events         Success and Failure' }
     end
 end
 
@@ -56,7 +56,7 @@ control 'advanced-audit-policy-17-2-4' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Security Group Management"') do
-        its('stdout') { should include 'Security Group Management                   Success and Failure' }
+        its('stdout') { should include 'Security Group Management               Success and Failure' }
     end
 end
 
@@ -68,7 +68,7 @@ control 'advanced-audit-policy-17-2-5' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"User Account Management"') do
-        its('stdout') { should include 'User Account Management                   Success and Failure' }
+        its('stdout') { should include 'User Account Management                 Success and Failure' }
     end
 end
 
@@ -92,7 +92,7 @@ control 'advanced-audit-policy-17-3-2' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Process Creation"') do
-        its('stdout') { should include 'Process Creation                   Success' }
+        its('stdout') { should include 'Process Creation                        Success' }
     end
 end
 
@@ -104,7 +104,7 @@ control 'advanced-audit-policy-17-5-1' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Account Lockout"') do
-        its('stdout') { should include 'Account Lockout                   Success and Failure' }
+        its('stdout') { should include 'Account Lockout                         Success and Failure' }
     end
 end
 
@@ -128,7 +128,7 @@ control 'advanced-audit-policy-17-5-3' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Logoff"') do
-        its('stdout') { should include 'Logoff                   Success' }
+        its('stdout') { should include 'Logoff                                  Success' }
     end
 end
 
@@ -140,7 +140,7 @@ control 'advanced-audit-policy-17-5-4' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:Logon"') do
-        its('stdout') { should include 'Logon                   Success and Failure' }
+        its('stdout') { should include 'Logon                                   Success and Failure' }
     end
 end
 
@@ -152,7 +152,7 @@ control 'advanced-audit-policy-17-5-5' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Other Logon/Logoff Events"') do
-        its('stdout') { should include 'Other Logon/Logoff Events                   Success and Failure' }
+        its('stdout') { should include 'Other Logon/Logoff Events               Success and Failure' }
     end
 end
 
@@ -164,7 +164,7 @@ control 'advanced-audit-policy-17-5-6' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Special Logon"') do
-        its('stdout') { should include 'Special Logon                   Success and Failure' }
+        its('stdout') { should include 'Special Logon                           Success and Failure' }
     end
 end
 
@@ -188,7 +188,7 @@ control 'advanced-audit-policy-17-7-1' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Audit Policy Change"') do
-        its('stdout') { should include 'Audit Policy Change                   Success and Failure' }
+        its('stdout') { should include 'Audit Policy Change                     Success and Failure' }
     end
 end
 
@@ -200,7 +200,7 @@ control 'advanced-audit-policy-17-7-2' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Authentication Policy Change"') do
-        its('stdout') { should include 'Authentication Policy Change                   Success' }
+        its('stdout') { should include 'Authentication Policy Change            Success' }
     end
 end
 
@@ -212,7 +212,7 @@ control 'advanced-audit-policy-17-7-3' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Authorization Policy Change"') do
-        its('stdout') { should include 'Authorization Policy Change                   Success and Failure' }
+        its('stdout') { should include 'Authorization Policy Change             Success and Failure' }
     end
 end
 
@@ -224,7 +224,7 @@ control 'advanced-audit-policy-17-8-1' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Sensitive Privilege Use"') do
-        its('stdout') { should include 'Sensitive Privilege Use                   Success and Failure' }
+        its('stdout') { should include 'Sensitive Privilege Use                 Success and Failure' }
     end
 end
 
@@ -236,7 +236,7 @@ control 'advanced-audit-policy-17-9-1' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"IPsec Driver"') do
-        its('stdout') { should include 'IPsec Driver                   Success and Failure' }
+        its('stdout') { should include 'IPsec Driver                            Success and Failure' }
     end
 end
 
@@ -248,7 +248,7 @@ control 'advanced-audit-policy-17-9-2' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Other System Events"') do
-        its('stdout') { should include 'Other System Events                   Success and Failure' }
+        its('stdout') { should include 'Other System Events                     Success and Failure' }
     end
 end
 
@@ -272,7 +272,7 @@ control 'advanced-audit-policy-17-9-4' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"Security System Extension"') do
-        its('stdout') { should include 'Security System Extension                   Success and Failure' }
+        its('stdout') { should include 'Security System Extension               Success and Failure' }
     end
 end
 
@@ -284,6 +284,6 @@ control 'advanced-audit-policy-17-9-5' do
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
     describe command('auditpol /get /subcategory:"System Integrity"') do
-        its('stdout') { should include 'System Integrity                   Success and Failure' }
+        its('stdout') { should include 'System Integrity                        Success and Failure' }
     end
 end
