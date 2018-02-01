@@ -1,0 +1,1 @@
+# 19.5 - Adminstrative Templates (User), Start Menu
