@@ -43,7 +43,7 @@ control 'advanced-audit-policy-17-2-3' do
     tag 'windows-firewall-public-profile','l1'
     ref 'CIS Microsoft Windows 10 Enterprise (Release 1703) Benchmark v1.3.0'
 
-    describe command('auditpol /get /subcategory:"Other Account Management Eventsn"') do
+    describe command('auditpol /get /subcategory:"Other Account Management Events"') do
         its('stdout') { should include 'Other Account Management Events                   Success and Failure' }
     end
 end
